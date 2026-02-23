@@ -9,8 +9,15 @@ const initialState = [
     editing: false,
     editText: "create todo",
   },
-  {
+    {
     id: 2,
+    title: "create todo",
+    completed: false,
+    editing: false,
+    editText: "create todo",
+  },
+  {
+    id: 3,
     title: "edit todo",
     completed: false,
     editing: true,
@@ -18,7 +25,7 @@ const initialState = [
   },
 ];
 
-let nextId = 3;
+let nextId = 4;
 
 function reducer(state, action) {
   switch (action.type) {
