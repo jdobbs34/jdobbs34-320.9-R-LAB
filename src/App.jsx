@@ -76,7 +76,7 @@ export default function TodoList() {
   return (
     <div
       style={{
-        padding: "20px",
+        padding: "10px",
         fontFamily: "Arial, sans-serif",
         maxWidth: "400px",
       }}>
@@ -131,7 +131,7 @@ export default function TodoList() {
                 })
               }
               onKeyDown={(e) =>
-                e.key === "Enter" && dispatch({ type: "SAVE", id: todo.id })
+                e.key === "Enter" && dispatch({ type: "save", id: todo.id })
               }
               style={{
                 padding: "3px 6px",
